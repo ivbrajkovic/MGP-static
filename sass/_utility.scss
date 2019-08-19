@@ -1,0 +1,27 @@
+.dropdown {
+    display: inline-block;
+    margin-bottom: 3px;
+    // margin-top: 3px;
+    margin-left: 2px;
+    height: 7px;
+    width: 7px;
+    border-left: 2px solid $body-color;
+    border-bottom: 2px solid $body-color;
+    transform: rotate(-45deg);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-row {
+    flex-direction: row;
+}
+
+.d-column {
+    flex-direction: column;
+}
+
+.d-space-between {
+    justify-content: space-between;
+}

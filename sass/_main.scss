@@ -1,0 +1,48 @@
+.post-big {
+    padding: 20px 0;
+    article {
+        border: 1px solid #000;
+
+        h1 {
+            padding: 0 40px;
+            color: #fff;
+            background: $navbar-dropdown-backgrpund;
+            font-size: 26px;
+            font-weight: 300;
+        }
+        section {
+            padding: 0 40px;
+            h2 {
+                font-size: 26px;
+                font-weight: 700;
+                padding: 30px 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.post {
+    article {
+        width: 348px;
+        header {
+            h2 {
+                padding: 0 20px;
+                color: #fff;
+                background: $navbar-dropdown-backgrpund;
+                font-size: 26px;
+                font-weight: 300;
+            }
+        }
+        section {
+            padding: 0 20px;
+            color: $body-color;
+            h3 {
+                padding: 10px 0;
+                font-size: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
