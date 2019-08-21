@@ -2,16 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
+    // @include img-flex;
     article {
         background: $background-2;
     }
-    article > * {
-        padding: 0 20px;
-    }
-    img {
-        padding: 0;
-    }
-    h2 {
-        margin-top: 15px;
-    }
+    // h3,
+    // section {
+    //     padding: 0 20px;
+    // }
+    // h2 {
+    //     margin-top: 15px;
+    // }
 }

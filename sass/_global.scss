@@ -5,8 +5,7 @@ body {
 
     color: $color-1;
     line-height: 1.2;
-
-    font-weight: 600;
+    font-weight: 400;
 
     font-family: 'Open Sans', sans-serif;
 
@@ -23,14 +22,14 @@ a:hover {
 // article {
 //     background: $background-2;
 h1 {
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 h2 {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -45,8 +44,9 @@ h3 {
 }
 
 p {
-    color: $color-2;
     font-size: 20px;
+    font-weight: 400;
+    color: $color-2;
 }
 // }
 
