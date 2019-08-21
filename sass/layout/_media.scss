@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    // show hamburger
+}
+
+@media (min-width: 992px) {
+    nav {
+        font-size: 16px;
+        .nav__menu-items {
+            margin-left: 16px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        font-size: 18px;
+        .nav__menu-items {
+            margin-left: 25px;
+        }
+    }
+}
