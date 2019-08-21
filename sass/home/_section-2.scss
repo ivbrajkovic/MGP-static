@@ -1,0 +1,17 @@
+.home-section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    article {
+        background: $background-2;
+    }
+    article > * {
+        padding: 0 20px;
+    }
+    img {
+        padding: 0;
+    }
+    h2 {
+        margin-top: 15px;
+    }
+}

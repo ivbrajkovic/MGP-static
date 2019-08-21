@@ -1,0 +1,9 @@
+.home-section-4 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    article {
+        background: $background-4;
+        position: relative;
+        padding: 20px;
+    }
+}

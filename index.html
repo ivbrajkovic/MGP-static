@@ -14,115 +14,112 @@
         /> -->
 
         <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="public/css/style.min.css" />
     </head>
     <body>
-        <header>
-            <nav class="container navbar">
-                <div class="language">
-                    <a href="#" class="active">HR</a> | <a href="#">EN</a> |
-                    <a href="#">IT</a>
-                </div>
-                <div class="logo">
-                    <img src="img/logo/logo.png" alt="MGP logo" />
-                </div>
-                <a href="#" class="navbar-item active">
-                    O nama
-                    <div class="dropdown"></div>
-                </a>
-                <a href="#" class="navbar-item">
-                    Odjea i zbirke
-                    <div class="dropdown"></div>
-                </a>
-                <a href="#" class="navbar-item">Aktivnosti</a>
-                <a href="#" class="navbar-item">Stalni postav</a>
-                <a href="#" class="navbar-item">Edukacija</a>
-                <a href="#" class="navbar-item">Knjižnica</a>
-                <a href="#" class="navbar-item">Izdanja</a>
-            </nav>
-
-            <div class="hero">
-                <!-- <img src="img/banner/baner-pocetna.jpg" alt="banner" /> -->
-                <img src="https://via.placeholder.com/1600x500" alt="banner" />
+        <nav class="container">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-        </header>
+            <div class="language">
+                <div class="active">HR</div> | 
+                <div>EN</div> |
+                <div>IT</div>
+            </div>
+            <div class="logo">
+                <img src="img/logo/logo.png" alt="MGP logo" />
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="navbar-item active">
+                        O nama
+                        <div class="dropdown"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="navbar-item">
+                        Odjea i zbirke
+                        <div class="dropdown"></div>
+                    </a>
+                </li>
+                <li><a href="#" class="navbar-item">Aktivnosti</a></li>
+                <li><a href="#" class="navbar-item">Stalni postav</a></li>
+                <li><a href="#" class="navbar-item">Edukacija</a></li>
+                <li><a href="#" class="navbar-item">Knjižnica</a></li>
+                <li><a href="#" class="navbar-item">Izdanja</a></li>
+            </ul>
+        </nav>
 
-        <main class="container">
-            <section class="post-big d-flex">
-                <aside>
-                    <img src="https://via.placeholder.com/555x321" srcset="" />
-                </aside>
-                <article>
-                    <h1>Lorem ipsum dolor sit.</h1>
-                    <section>
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-                            delectus praesentium, amet necessitatibus obcaecati doloremque odio
-                            harum deleniti officiis, quod nesciunt rem esse facilis animi culpa
-                            provident tempora fugit laborum!
-                        </p>
-                    </section>
-                </article>
-            </section>
+        <section 
+            class="img-flex-back hero"
+            style="background-image: url(img/banner/baner-pocetna.jpg)">
+            <!-- <img src="img/banner/baner-pocetna.jpg" alt="banner" /> -->
+            <!-- <img class="w3-image" src="img/banner/baner-pocetna.jpg" /> -->
+            <!-- <img class="w3-image img-flex-back" src="img/banner/baner-pocetna.jpg" /> -->
+        </section>
 
-            <section class="post d-flex d-space-between">
-                <article>
-                    <header>
-                        <img src="https://via.placeholder.com/348x195" srcset="" />
-                        <h2>Lorem ipsum dolor sit.</h2>
-                    </header>
-                    <section>
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
-                            eligendi voluptatum, delectus, a facilis numquam porro labore, animi sed
-                            voluptate architecto incidunt minima et accusamus officia qui eveniet
-                            consectetur.
-                        </p>
-                    </section>
-                </article>
-                <article>
-                    <header>
-                        <img src="https://via.placeholder.com/348x195" srcset="" />
-                        <h2>Lorem ipsum dolor sit.</h2>
-                    </header>
-                    <section>
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
-                            eligendi voluptatum, delectus, a facilis numquam porro labore, animi sed
-                            voluptate architecto incidunt minima et accusamus officia qui eveniet
-                            consectetur.
-                        </p>
-                    </section>
-                </article>
-                <article>
-                    <header>
-                        <img src="https://via.placeholder.com/348x195" srcset="" />
-                        <h2>Lorem ipsum dolor sit.</h2>
-                    </header>
-                    <section>
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
-                            eligendi voluptatum, delectus, a facilis numquam porro labore, animi sed
-                            voluptate architecto incidunt minima et accusamus officia qui eveniet
-                            consectetur.
-                        </p>
-                    </section>
-                </article>
-            </section>
-        </main>
+        <!-- <section class="container d-flex m-t-20 home-section-1"> -->
+        <section class="container m-t-20 home-section-1">
+            <aside>
+                <img src="https://via.placeholder.com/555x321" />
+            </aside>
+            <article>
+                <h3>Lorem ipsum dolor sit.</h3>
+                <h1>Lorem ipsum dolor sit.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, delectus
+                    praesentium, amet necessitatibus obcaecati doloremque odio harum deleniti
+                    officiis, quod nesciunt rem
+                </p>
+            </article>
+        </section>
 
-        <section class="info">
-            <div class="container d-flex d-space-between">
+        <section class="container m-t-20 home-section-2">
+            <article>
+                <img src="https://via.placeholder.com/348x195" srcset="" />
+                <h3>Lorem ipsum dolor</h3>
+                <section>
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
+                        eligendi voluptatum
+                    </p>
+                </section>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/348x195" srcset="" />
+                <h3>Lorem ipsum dolor</h3>
+                <section>
+                    <h2>Lorem ipsum dolor</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
+                        eligendi voluptatum
+                    </p>
+                </section>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/348x195" srcset="" />
+                <h3>Lorem ipsum dolor</h3>
+                <section>
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
+                        eligendi voluptatum
+                    </p>
+                </section>
+            </article>
+        </section>
+
+        <section class="m-t-40 home-section-3">
+            <div class="container">
                 <article>
                     <header>
-                        <img src="https://via.placeholder.com/54x49" alt="" srcset="" />
+                        <img src="img/info/info-lokacija.png" alt="" srcset="" />
                         <h1>Lorem.</h1>
                     </header>
                     <section>
@@ -134,7 +131,7 @@
                 </article>
                 <article>
                     <header>
-                        <img src="https://via.placeholder.com/54x49" alt="" srcset="" />
+                        <img src="img/info/info-rvrijeme.png" alt="" srcset="" />
                         <h1>Lorem.</h1>
                     </header>
                     <section>
@@ -147,44 +144,96 @@
                 </article>
                 <article>
                     <header>
-                        <img src="https://via.placeholder.com/54x49" alt="" srcset="" />
-                        <h1>Lorem.</h1>
+                        <img src="img/info/info-ulaznice.png" alt="" srcset="" />
+                        <h1>ulaznice</h1>
                     </header>
                     <section>
-                        <h2>Lorem, ipsum dolor.</h2>
+                        <h2>
+                            Odrasli: 20 kn Studenti, djeca, umirovljenici: 10kn
+                        </h2>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, sequi.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, sequi.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, sequi.
+                            Stručna vodstva uz prethodnu najavu. Stručno vodstvo na HR jeziku: 50,00
+                            kn / grupa Stručno vodstvo na EN jeziku: 100,00 kn / grupa
                         </p>
                     </section>
                 </article>
             </div>
         </section>
 
-        <div class="container">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <p>
-                lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maiores
-                possimus ducimus, in animi totam corrupti tenetur consequuntur, mollitia dolorem
-                aliquam modi fugit harum illo quia ullam aperiam! Consectetur, officia?
-            </p>
-            <p>
-                lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maiores
-                possimus ducimus, in animi totam corrupti tenetur consequuntur, mollitia dolorem
-                aliquam modi fugit harum illo quia ullam aperiam! Consectetur, officia?
-            </p>
-            <p>
-                lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident maiores
-                possimus ducimus, in animi totam corrupti tenetur consequuntur, mollitia dolorem
-                aliquam modi fugit harum illo quia ullam aperiam! Consectetur, officia?
-            </p>
-        </div>
+        <section class="container m-t-40 home-section-4">
+            <article>
+                <h1>Lorem.</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore culpa,
+                    laboriosam fugit accusamus et non.
+                </p>
+                <button>VIŠE</button>
+            </article>
+            <img src="https://via.placeholder.com/677x244" />
+        </section>
+
+        <section 
+            class="m-t-40 home-section-5 img-flex-back" 
+            style="background-image: url(img/banner/baner-pocetna-okastelu.jpg)"
+        >
+        <!-- <section class="m-t-40 home-section-5"> -->
+            <!-- <img src="img/banner/baner-pocetna-okastelu.jpg" alt="O kaštelu" /> -->
+            <div class="container">
+                <article>
+                    <section>
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                            nobis, ducimus esse atque nesciunt aliquid libero nam officiis eaque
+                            consequuntur reprehenderit sapiente repellendus cumque, saepe molestiae
+                            nemo quo quos inventore amet cupiditate aperiam a repellat eius. At,
+                            autem doloremque, dolore distinctio maxime rem reprehenderit consectetur
+                            modi culpa, vitae beatae porro.
+                        </p>
+                    </sectio>
+                    <button>VIŠE</button>
+                </article>
+            </div>
+        </section>
+        <!-- <section class="m-t-40 home-section-5">
+            <img src="img/banner/baner-pocetna-okastelu.jpg" alt="O kaštelu" />
+            <div class="container">
+                <article>
+                    <section>
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+                            nobis, ducimus esse atque nesciunt aliquid libero nam officiis eaque
+                            consequuntur reprehenderit sapiente repellendus cumque, saepe molestiae
+                            nemo quo quos inventore amet cupiditate aperiam a repellat eius. At,
+                            autem doloremque, dolore distinctio maxime rem reprehenderit consectetur
+                            modi culpa, vitae beatae porro.
+                        </p>
+                    </sectio>
+                    <button>VIŠE</button>
+                </article>
+            </div>
+        </section> -->
+
+        <footer class="m-t-40">
+            <div class="container">
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <img src="img/footer/social-1.png" />
+                    <img src="img/footer/social-2.png" />
+                </div>
+                <div>
+                    <img src="img/footer/footer-1.png" />
+                    <img src="img/footer/footer-2.png" />
+                </div>
+            </div>
+        </footer>
+
         <!-- <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
