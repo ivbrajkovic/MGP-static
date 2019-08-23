@@ -1,11 +1,20 @@
 // @import './w3';
 @import './variables';
 @import './bootstrap-reboot';
-@import './container';
+// @import './container';
 @import './utility';
 @import './mixin';
 
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 24px;
+$hamburger-layer-height: 3px;
+$hamburger-layer-spacing: 5px;
+$hamburger-layer-color: $color-1;
+@import './hamburgers/_hamburgers.scss';
+
 @import './layout/navbar';
+
 @import './layout/hero';
 @import './layout/footer';
 @import './layout/media';
@@ -15,7 +24,14 @@
 @import './home/section-3';
 @import './home/section-4';
 @import './home/section-5';
+@import './home/media';
 
 @import './global';
+@import './buttons';
 
 // @import './debug';
+
+* {
+    margin: 0;
+    padding: 0;
+}

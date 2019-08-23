@@ -8,8 +8,15 @@ $color-4: #cfcfcf;
 $color-5: #f8f8f8;
 $color-6: #d4d2d2;
 
-$background-1: #0661a6;
-$background-2: #efefef;
+$primary-back: #0661a6;
+$primary-back-lighter-05: lighten($primary-back, 5%);
+$primary-back-lighter-10: lighten($primary-back, 10%);
+
+$secondary-back: #efefef;
+
 $background-3: #5f686f;
 $background-4: #cacaca;
 $background-5: #58646d;
+
+$nav-height: 100px;
+$nav-back: rgba(255, 255, 255, 0.95);

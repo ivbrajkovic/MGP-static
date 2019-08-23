@@ -13,156 +13,189 @@
             crossorigin="anonymous"
         /> -->
 
+        <!-- <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+            rel="stylesheet"
+        /> -->
+
         <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
             rel="stylesheet"
         />
+
+        <link rel="stylesheet" href="public/css/waves.min.css" />
         <link rel="stylesheet" href="public/css/style.min.css" />
     </head>
     <body>
-        <nav class="container nav">
-            <div class="nav_hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <div class="nav__language">
-                <div class="active">HR</div>
-                |
-                <div>EN</div>
-                |
-                <div>IT</div>
-            </div>
-            <div class="nav__logo">
-                <img src="img/logo/logo.png" alt="MGP logo" />
-            </div>
-            <div class="nav__menu-lists">
-                <a href="#" class="nav__menu-items active">
-                    O nama
-                    <div class="dropdown"></div>
-                    <div class="nav__submenu--list nav__submenu--1-list">
-                        <div class="nav_submenu-items">Pazinski kaštel</div>
-                        <div class="nav_submenu-items">Povjest MGP</div>
-                        <div class="nav_submenu-items">Djelatnici</div>
-                        <div class="nav_submenu-items">Dokumenti</div>
-                        <div class="nav_submenu-items">Usluge</div>
-                        <div class="nav_submenu-items">Kontakt</div>
-                    </div>
-                </a>
-                <a href="#" class="nav__menu-items">
-                    Odjea i zbirke
-                    <div class="dropdown"></div>
-                    <div class="nav__submenu--list nav__submenu--2-list">
-                        <div class="nav_submenu-items">Kultutrno-povjesni odjel</div>
-                        <div class="nav_submenu-items">Povjesni odjel</div>
-                        <div class="nav_submenu-items">Galerijski odjel</div>
-                    </div>
-                </a>
-                <a href="#" class="nav__menu-items">Aktivnosti</a>
-                <a href="#" class="nav__menu-items">Stalni postav</a>
-                <a href="#" class="nav__menu-items">Edukacija</a>
-                <a href="#" class="nav__menu-items">Knjižnica</a>
-                <a href="#" class="nav__menu-items">Izdanja</a>
+        <nav class="w3-card-4">
+            <div class="container navbar f-xl-18">
+                <div class="language">
+                    <div class="active">HR</div>
+                    |
+                    <div>EN</div>
+                    |
+                    <div>IT</div>
+                </div>
+
+                <div class="logo">
+                    <img src="img/logo/logo.png" alt="MGP logo" />
+                </div>
+
+                <dicv class="hamburger hamburger--collapse">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </dicv>
+
+                <div class="menu-lists">
+                    <a href="#" class="menu-items active">
+                        O nama
+                        <div class="dropdown"></div>
+                        <div class="submenu-lists submenu--1-list">
+                            <div class="nav_submenu-items">Pazinski kaštel</div>
+                            <div class="nav_submenu-items">Povjest MGP</div>
+                            <div class="nav_submenu-items">Djelatnici</div>
+                            <div class="nav_submenu-items">Dokumenti</div>
+                            <div class="nav_submenu-items">Usluge</div>
+                            <div class="nav_submenu-items">Kontakt</div>
+                        </div>
+                    </a>
+                    <a href="#" class="menu-items">
+                        Odjea i zbirke
+                        <div class="dropdown"></div>
+                        <div class="submenu-lists submenu--2-list">
+                            <div class="nav_submenu-items">Kultutrno-povjesni odjel</div>
+                            <div class="nav_submenu-items">Povjesni odjel</div>
+                            <div class="nav_submenu-items">Galerijski odjel</div>
+                        </div>
+                    </a>
+                    <a href="#" class="menu-items">Aktivnosti</a>
+                    <a href="#" class="menu-items">Stalni postav</a>
+                    <a href="#" class="menu-items">Edukacija</a>
+                    <a href="#" class="menu-items">Knjižnica</a>
+                    <a href="#" class="menu-items">Izdanja</a>
+                </div>
             </div>
         </nav>
 
-        <section
-            class="img-flex-back w3-card-4 hero"
-            style="background-image: url(img/banner/baner-pocetna.jpg)"
-        ></section>
+        <section class="w3-card-4 hero">
+            <!-- <img class="img-cover" src="img/banner/baner-pocetna.jpg" alt="" srcset="" /> -->
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/banner/baner-pocetna.jpg" />
+                <source
+                    media="(min-width: 992px) and (max-width: 1199px)"
+                    srcset="img/banner/baner-pocetna-1200px.jpg"
+                />
+                <!-- <source media="(min-width: 768px) and (max-width: 991px)" srcset="img/banner/baner-pocetna-768px.jpg"> -->
+                <img class="img-cover" srcset="img/banner/baner-pocetna-768px.jpg" />
+                <!-- <img class="img-fluid" srcset="img/banner/baner-pocetna-768px.jpg" /> -->
+                <!--<img class="img-fluid" srcset="img/head_large.jpeg" alt="…" /> -->
+            </picture>
+        </section>
+        <!-- class="img-flex-back w3-card-4 hero"
+            style="background-image: url(img/banner/baner-pocetna.jpg)" -->
 
-        <div class="container m-t-20">
-            <section class="w3-card-4 home-section-1">
+        <section class="container m-t-20-40 section-1">
+            <div class="w3-card-4 post-big">
                 <img class="img-flex" src="https://via.placeholder.com/555x321" />
                 <article>
-                    <h3 class="container-p40">Lorem ipsum dolor sit.</h3>
-                    <div class="container-p40">
-                        <h1 class="m-t-40 m-b-30">Lorem ipsum dolor sit.</h1>
-                        <p>
+                    <h2 class="p-0-20 f-xs-18 post-title ">Lorem ipsum dolor sit.</h2>
+                    <section class="p-20">
+                        <h1 class="f-xs-32 f-m-22 f-l-30 f-xl-36">DEFINIRAJ NEDEFINIRANO</h1>
+                        <p class="f-xs-18">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             delectus praesentium, amet necessitatibus obcaecati doloremque odio
                             harum deleniti officiis, quod nesciunt rem
                         </p>
-                    </div>
+                    </section>
                 </article>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <div class="container m-t-20">
-            <section class="home-section-2">
-                <article class="w3-card-4">
-                    <img class="img-flex" src="https://via.placeholder.com/348x195" />
-                    <h3 class="container-p20">Lorem ipsum dolor</h3>
-                    <section class="container-p20">
-                        <h2 class="m-t-15">Lorem ipsum dolor</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
-                            eligendi voluptatum
-                        </p>
-                    </section>
-                </article>
-                <article class="w3-card-4">
-                    <img class="img-flex" src="https://via.placeholder.com/348x195" srcset="" />
-                    <h3 class="container-p20">Lorem ipsum dolor</h3>
-                    <section class="container-p20">
-                        <h2 class="m-t-15">Lorem ipsum dolor</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
-                            eligendi voluptatum
-                        </p>
-                    </section>
-                </article>
-                <article class="w3-card-4">
-                    <img class="img-flex" src="https://via.placeholder.com/348x195" srcset="" />
-                    <h3 class="container-p20">Lorem ipsum dolor</h3>
-                    <section class="container-p20">
-                        <h2 class="m-t-15">Lorem ipsum dolor sit.</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
-                            eligendi voluptatum
-                        </p>
-                    </section>
-                </article>
-            </section>
-        </div>
+        <section class="container m-t-20-40 gap-20-40 section-2">
+            <article class="w3-card-4 post">
+                <!-- <img class="img-flex" src="https://via.placeholder.com/348x195" /> -->
+                <img class="img-flex" src="img/post/post-1.png" />
+                <h2 class="p-0-20 post-title f-xl-18">Lorem ipsum dolor</h2>
+                <section class="p-20">
+                    <h1 class="f-xs-24 f-m-22 f-l-26 f-xl-28">Lorem ipsum dolor</h1>
+                    <p class="f-xl-18">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
+                        eligendi voluptatum
+                    </p>
+                </section>
+            </article>
+            <article class="w3-card-4 post">
+                <img class="img-flex" src="https://via.placeholder.com/348x195" srcset="" />
+                <h2 class="p-0-20 post-title f-xl-18">Lorem ipsum dolor</h2>
+                <section class="p-20">
+                    <h1 class="f-xs-24 f-m-22 f-l-26 f-xl-28">GREMO NA KAFE</h1>
+                    <p class="f-xl-18">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
+                        eligendi voluptatum
+                    </p>
+                </section>
+            </article>
+            <article class="w3-card-4 post">
+                <img class="img-flex" src="https://via.placeholder.com/348x195" srcset="" />
+                <h2 class="p-0-20 post-title f-xl-18">Lorem ipsum dolor</h2>
+                <section class="p-20">
+                    <h1 class="f-xs-24 f-m-22 f-l-26 f-xl-28">Lorem ipsum dolor</h1>
+                    <p class="f-xl-18">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae iste
+                        eligendi voluptatum
+                    </p>
+                </section>
+            </article>
+        </section>
 
-        <section class="m-t-40 w3-card-4 home-section-3">
-            <div class="container">
-                <article class="container-p20">
-                    <header class="panel-m20">
+        <section class="m-t-20-40 p-20-0 w3-card-4 section-3">
+            <div class="container d-grid">
+                <article class="post-info">
+                    <header class="m-b-10">
                         <img src="img/info/info-lokacija.png" alt="" srcset="" />
-                        <h1 class="d-inl-blok">Lorem.</h1>
+                        <h1 class="d-inl-blok f-xs-20 f-l-22 f-xl-24">
+                            LOKACIJA
+                        </h1>
                     </header>
                     <section>
-                        <h2>Lorem, ipsum dolor.</h2>
-                        <p class="color-inherit f-16">
+                        <h2 class="f-xs-18 f-l-20" f-xl-22>
+                            Lorem, ipsum dolor.
+                        </h2>
+                        <p class="m-0 color-inherit f-xs-14 f-l-16 f-xl-18">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, sequi.
                         </p>
                     </section>
                 </article>
-                <article class="container-p20">
-                    <header class="panel-m20">
+                <article class="post-info">
+                    <header class="m-b-10">
                         <img src="img/info/info-rvrijeme.png" alt="" srcset="" />
-                        <h1 class="d-inl-blok">Lorem.</h1>
+                        <h1 class="d-inl-blok f-xs-20 f-l-22 f-xl-24">
+                            RADNO VRIJEME
+                        </h1>
                     </header>
                     <section>
-                        <h2>Lorem, ipsum dolor.</h2>
-                        <p class="color-inherit f-16">
+                        <h2 class="f-xs-18 f-l-20 f-xl-22">
+                            Lorem, ipsum dolor.
+                        </h2>
+                        <p class="m-0 color-inherit f-xs-14 f-l-16 f-xl-18">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, sequi.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, sequi.
                         </p>
                     </section>
                 </article>
-                <article class="container-p20">
-                    <header class="panel-m20">
+                <article class="post-info">
+                    <header class="m-b-10">
                         <img src="img/info/info-ulaznice.png" alt="" srcset="" />
-                        <h1 class="d-inl-blok">ulaznice</h1>
+                        <h1 class="d-inl-blok f-xs-20 f-l-22 f-xl-24">
+                            ULAZNICE
+                        </h1>
                     </header>
                     <section>
-                        <h2>
+                        <h2 class="f-xs-18 f-l-20 f-xl-22">
                             Odrasli: 20 kn Studenti, djeca, umirovljenici: 10kn
                         </h2>
-                        <p class="color-inherit f-16">
+                        <p class="m-0 color-inherit f-xs-14 f-l-16 f-xl-18">
                             Stručna vodstva uz prethodnu najavu. Stručno vodstvo na HR jeziku: 50,00
                             kn / grupa Stručno vodstvo na EN jeziku: 100,00 kn / grupa
                         </p>
@@ -171,52 +204,36 @@
             </div>
         </section>
 
-        <section class="container m-t-40">
-            <div class="w3-card-4 home-section-4">
-                <article class="container-p20">
-                    <h1 class="m-t-20">Lorem.</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore culpa,
-                        laboriosam fugit accusamus et non.
-                    </p>
-                    <button>VIŠE</button>
-                </article>
-                <img class="imf-flex" src="https://via.placeholder.com/677x244" />
+        <section class="container m-t-20-40 section-4">
+            <div class="w3-card-4 d-grid">
+                <!-- <div class="d-flex d-column space-between"> -->
+                <div class="d-grid-1">
+                    <article class="p-20">
+                        <h1 class="f-xs-40 f-l-36">Lorem, ipsum dolor.</h1>
+                        <p class="m-0 f-xl-18">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore culpa,
+                            laboriosam fugit accusamus et non.
+                        </p>
+                    </article>
+                    <div class="btn-container">
+                        <button class="btn btn-dark f-m-18">VIŠE</button>
+                    </div>
+                </div>
+                <img class="img-cover" src="https://via.placeholder.com/677x244" />
             </div>
         </section>
 
-        <div class="w3-card-4">
-            <section
-                class="m-t-40 img-flex-back home-section-5"
-                style="background-image: url(img/banner/baner-pocetna-okastelu.jpg)"
-            >
-                <!-- <section class="m-t-40 home-section-5"> -->
-                <!-- <img src="img/banner/baner-pocetna-okastelu.jpg" alt="O kaštelu" /> -->
-                <div class="container h-100">
-                    <article class="container-p20 h-100 d-flex-v-center">
-                        <section>
-                            <h1>Lorem, ipsum dolor.</h1>
-                            <p class="color-inherit f-18">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                                nobis, ducimus esse atque nesciunt aliquid libero nam officiis eaque
-                                consequuntur reprehenderit sapiente repellendus cumque, saepe
-                                molestiae nemo quo quos inventore amet cupiditate aperiam a repellat
-                                eius. At, autem doloremque, dolore distinctio maxime rem
-                                reprehenderit consectetur modi culpa, vitae beatae porro.
-                            </p>
-                        </section>
-                        <button>VIŠE</button>
-                    </article>
-                </div>
-            </section>
-        </div>
-        <!-- <section class="m-t-40 home-section-5">
-            <img src="img/banner/baner-pocetna-okastelu.jpg" alt="O kaštelu" />
-            <div class="container">
-                <article>
+        <section
+            class="w3-card-4 m-t-20 img-flex-back section-5"
+            style="background-image: url(img/banner/baner-pocetna-okastelu.jpg)"
+        >
+            <div class="container h-100">
+                <article class="p-20 h-100 d-grid">
                     <section>
-                        <h1>Lorem, ipsum dolor.</h1>
-                        <p>
+                        <h1 class="m-b-20 f-xs-40 f-l-44">
+                            Lorem, ipsum dolor.
+                        </h1>
+                        <p class="m-0 color-inherit f-m-18">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
                             nobis, ducimus esse atque nesciunt aliquid libero nam officiis eaque
                             consequuntur reprehenderit sapiente repellendus cumque, saepe molestiae
@@ -224,19 +241,25 @@
                             autem doloremque, dolore distinctio maxime rem reprehenderit consectetur
                             modi culpa, vitae beatae porro.
                         </p>
-                    </sectio>
-                    <button>VIŠE</button>
+                    </section>
+                    <div class="btn-container">
+                        <button class="btn btn-light f-m-18">VIŠE</button>
+                    </div>
                 </article>
             </div>
-        </section> -->
+        </section>
 
-        <footer class="m-t-40">
-            <div class="container">
+        <footer class="m-t-20">
+            <div class="container text-center d-grid">
                 <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="m-0 f-xl-18">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
                 </div>
                 <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="m-0 f-xl-18">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
                 </div>
                 <div>
                     <img src="img/footer/social-1.png" />
@@ -249,10 +272,7 @@
             </div>
         </footer>
 
-        <!-- <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"
-        ></script> -->
+        <script src="public/js/waves.min.js"></script>
+        <script src="public/js/main.js"></script>
     </body>
 </html>

@@ -1,16 +1,13 @@
-.home-section-2 {
+.section-2 {
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    // @include img-flex;
-    article {
-        background: $background-2;
+    // grid-template-columns: minmax(100px, 400px);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    // grid-gap: 20px;
+
+    .post {
+        max-width: 348px;
+        background: $secondary-back;
     }
-    // h3,
-    // section {
-    //     padding: 0 20px;
-    // }
-    // h2 {
-    //     margin-top: 15px;
-    // }
 }
