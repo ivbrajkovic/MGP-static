@@ -1,11 +1,11 @@
 .section-1 {
+    width: 100%;
     text-align: center;
 
     .post-big {
-        margin-left: -15px;
-        margin-right: -15px;
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
         // @include img-flex;
         background: $secondary-back;
     }

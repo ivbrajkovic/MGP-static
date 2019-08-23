@@ -2,7 +2,8 @@
 @import './variables';
 @import './bootstrap-reboot';
 // @import './container';
-@import './utility';
+// @import './utility';
+@import './freamwork/freamwork';
 @import './mixin';
 
 $hamburger-padding-x: 0;
@@ -26,12 +27,8 @@ $hamburger-layer-color: $color-1;
 @import './home/section-5';
 @import './home/media';
 
-@import './global';
 @import './buttons';
+@import './font';
+@import './global';
 
 // @import './debug';
-
-* {
-    margin: 0;
-    padding: 0;
-}

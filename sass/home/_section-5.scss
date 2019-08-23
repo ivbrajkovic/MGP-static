@@ -8,18 +8,17 @@
         grid-template-columns: 1fr;
         grid-template-rows: 4fr auto;
         align-items: center;
-        text-align: center;
         color: $color-5;
         background: $primary-back;
         opacity: 0.95;
     }
-    .btn-container {
-        margin-bottom: 40px;
-        // align-self: flex-start;
-        // text-align: right;
-        // display: inline-block;
-        // margin-right: -20px;
-        // margin-bottom: -20px;
-        // margin-top: -20px;
-    }
+    //.btn-container {
+    //margin-bottom: 40px;
+    // align-self: flex-start;
+    // text-align: right;
+    // display: inline-block;
+    // margin-right: -20px;
+    // margin-bottom: -20px;
+    // margin-top: -20px;
+    //}
 }
