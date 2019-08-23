@@ -15,5 +15,54 @@
         false
     );
 
-    console.log('test 1');
+    // window.requestAnimationFrame(function() {
+    //     console.log('paint!');
+    // });
+
+    // window.addEventListener('scroll', function() {
+    //     let position = scrollPosition();
+    //     console.log(`scrollY ${position}`);
+    //     // console.log(position);
+    // });
+
+    // function scrollPosition() {
+    //     return window.scrollY;
+    // }
+
+    /*******************************************************************
+     *  Optimized window on scroll evend,
+     *  it use rAF form throttling function execution
+     *******************************************************************/
+
+    const scrollBreakPoint = 250;
+    const navbar = document.getElementById('navbar');
+
+    let ticking = false;
+    let isShrinked = false;
+    // let scrollPosition = 0;
+
+    function shrinkNavbar(position) {
+        // console.log('TCL: isShrinked', isShrinked);
+        // console.log('TCL: shrinkNavbar -> position', position);
+
+        if (!isShrinked && position > scrollBreakPoint) {
+            navbar.classList.add('navbar-shrink');
+            isShrinked = true;
+        } else if (isShrinked && position < scrollBreakPoint) {
+            navbar.classList.remove('navbar-shrink');
+            isShrinked = false;
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        // scrollPosition = window.screenY;
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                shrinkNavbar(window.scrollY);
+                ticking = false;
+            });
+        }
+        ticking = true;
+    });
+    /*******************************************************************/
 })();
