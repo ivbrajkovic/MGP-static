@@ -2,11 +2,9 @@
     width: 100%;
     text-align: center;
 
-    .post-big {
+    .d-grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        // @include img-flex;
         background: $secondary-back;
     }
 }

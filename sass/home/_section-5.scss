@@ -1,7 +1,15 @@
 .section-5 {
+    position: relative;
+    // padding: 0;
     text-align: center;
 
+    .item-1 {
+        padding: 0;
+    }
+
     .item-2 {
+        padding: 0;
+        background: $primary-back;
         //     margin-left: auto;
         //     margin-right: auto;
         //     max-width: 450px;
@@ -10,13 +18,21 @@
         //     grid-template-rows: 4fr auto;
         //     align-items: center;
         //     color: $color-5;
-        background: $primary-back;
-        //     opacity: 0.95;
+        // opacity: 0.95;
     }
 
-    picture {
-        height: $banner-height-small;
+    .float-right {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: green;
     }
+
+    // picture {
+    //     height: $banner-height-small;
+    // }
     //.btn-container {
     //margin-bottom: 40px;
     // align-self: flex-start;

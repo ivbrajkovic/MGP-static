@@ -62,8 +62,14 @@ p {
 // }
 
 .banner {
-    min-height: 250px;
-    max-height: 500px;
+    height: 260px;
+    // height: 760px;
+    width: 100%;
+}
+
+.slider {
+    height: auto;
+    width: 100%;
 }
 
 .post-title {
