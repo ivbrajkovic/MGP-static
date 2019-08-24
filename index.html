@@ -85,13 +85,20 @@
 
         <section class="w3-card-4 hero">
             <!-- <img class="img-cover" src="img/banner/baner-pocetna.jpg" alt="" srcset="" /> -->
-            <picture>
+            <picture class="banner">
                 <source media="(min-width: 1200px)" srcset="img/banner/baner-pocetna.jpg" />
                 <source
                     media="(min-width: 992px) and (max-width: 1199px)"
                     srcset="img/banner/baner-pocetna-1200px.jpg"
                 />
-                <!-- <source media="(min-width: 768px) and (max-width: 991px)" srcset="img/banner/baner-pocetna-768px.jpg"> -->
+                <source
+                    media="(min-width: 768px) and (max-width: 991px)"
+                    srcset="https://via.placeholder.com/991x500"
+                />
+                <!-- <source
+                    media="(min-width: 768px) and (max-width: 991px)"
+                    srcset="img/banner/baner-pocetna-1200px.jpg"
+                /> -->
                 <img class="img-cover" srcset="img/banner/baner-pocetna-768px.jpg" />
                 <!-- <img class="img-fluid" srcset="img/banner/baner-pocetna-768px.jpg" /> -->
                 <!--<img class="img-fluid" srcset="img/head_large.jpeg" alt="…" /> -->
@@ -235,13 +242,23 @@
             </div>
         </section>
 
-        <section
+        <section class="m-t-xs-20-xl-40 w3-card-4 section-5">
+            <!-- <section
             class="w3-card-4 m-t-20 img-flex-back section-5"
             style="background-image: url(img/banner/baner-pocetna-okastelu.jpg)"
-        >
-            <div class="container h-100 d-grid">
-                <!-- <div class="h-100 d-grid"> -->
-                <div class="p-20 item-1">
+        > -->
+            <picture class="banner item-1">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/banner/baner-pocetna.jpg" />
+                    <source
+                        media="(min-width: 992px) and (max-width: 1199px)"
+                        srcset="img/banner/baner-pocetna-1200px.jpg"
+                    />
+                    <img class="img-cover" srcset="img/banner/baner-pocetna-768px.jpg" />
+                </picture>
+            </picture>
+            <div class="item-2 container">
+                <div class="p-20-0 item-1">
                     <h1 class="header-1-light">
                         Lorem, ipsum dolor.
                     </h1>
@@ -257,7 +274,6 @@
                         <button class="btn btn-light f-m-18">VIŠE</button>
                     </div>
                 </div>
-                <!-- </div> -->
             </div>
         </section>
 

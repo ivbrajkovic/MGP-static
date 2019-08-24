@@ -17,65 +17,40 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // cursor: pointer;
 
     height: $nav-height;
-
-    .hamburger {
-        align-self: flex-end;
-        margin-bottom: 22px;
-    }
-
-    //     position: relative;
-    //     display: inline-block;
-    //     margin-top: 35px;
-    //     width: 40px;
-    //     height: 24px;
-    //     background: #e9e9e9;
-    //     // border-bottom: 3px solid #3d3d3d;
-    //     cursor: pointer;
-
-    //     .line {
-    //         display: block;
-    //         position: absolute;
-    //         top: 50%;
-    //         transform: translateY(-50%);
-    //         width: 40px;
-    //         height: 4px;
-    //         background-color: #000;
-    //     }
-
-    // &::before {
-    //     // position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     // content: '';
-    //     height: 3px;
-    //     width: 100%;
-    //     background: #3d3d3d;
-    //     // border-bottom: 3px solid #3d3d3d;
-    // }
-    // &::after {
-    //     // position: absolute;
-    //     top: 8px;
-    //     left: 0;
-    //     // content: '';
-    //     height: 3px;
-    //     width: 100%;
-    //     background: #3d3d3d;
-    //     // border-bottom: 3px solid #3d3d3d;
-    // }
-    // }
+    transition: height 0.3s ease-out 0s;
 
     .language {
         position: absolute;
         top: 10px;
         right: 15px;
         color: #b9b9b9;
+
+        transition-delay: 200ms;
+        transition-duration: 0, 500ms;
+        transition-property: visibility, opacity;
+        transition-timing-function: ease-out;
+
         > div {
             display: inline-block;
         }
         .active {
             color: #3d3d3d;
+        }
+    }
+    .hamburger {
+        align-self: flex-end;
+        margin-bottom: 22px;
+    }
+    .logo {
+        img {
+            // transition-delay: 200ms;
+            // transition-duration: 0, 500ms;
+            // transition-property: height, width;
+            transition: transform 300ms ease-out;
+            transform-origin: 0% 50%;
         }
     }
 
@@ -168,11 +143,25 @@ nav {
 
 .navbar-shrink {
     height: 60px;
+
     .language {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+
+        transition-delay: 0;
+        transition-duration: 200ms, 0;
+        transition-property: opacity, visibility;
+        transition-timing-function: ease-out;
+        // display: none;
     }
-    .logo > img {
-        width: 60%;
+    .logo {
+        img {
+            // width: 60%;
+            // transition-delay: 0ms;
+            // transition-duration: 500ms, 0ms;
+            // transition-property: height, width;
+            transform: scale(0.6);
+        }
     }
     .hamburger {
         margin-bottom: 14px;
