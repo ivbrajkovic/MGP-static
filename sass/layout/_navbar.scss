@@ -89,7 +89,8 @@ nav {
             background: $color-4;
             // background: red;
             transform: translate(-50%, 0) scaleX(0);
-            transition: all 0.3s ease-in-out;
+            // transition: all 0.3s ease-in-out;
+            transition: $nav-transation-fnc;
         }
 
         &:hover:not(.active):after {

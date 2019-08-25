@@ -1,10 +1,10 @@
 // @import './w3';
 @import './bootstrap-reboot';
-@import './freamwork/freamwork';
 // @import './utility';
 @import './variables';
 @import './mixin';
 @import './font';
+@import './freamwork/freamwork';
 
 $hamburger-padding-x: 0;
 $hamburger-padding-y: 0;
@@ -25,8 +25,11 @@ $hamburger-layer-color: $color-1;
 @import './home/section-4';
 @import './home/section-5';
 
-// @import './debug';
+// Odjeli
+@import './odjeli/section-6';
+@import './odjeli/section-7';
 
+@import './debug';
 @import './global';
 @import './buttons';
 

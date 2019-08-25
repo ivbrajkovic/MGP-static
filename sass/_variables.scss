@@ -16,6 +16,8 @@ $color-4: #cfcfcf;
 $color-5: #f8f8f8;
 $color-6: #d4d2d2;
 
+$odjeli-menu-back: #d1d2d4;
+
 $primary-back: #0661a6;
 $primary-back-lighter-05: lighten($primary-back, 5%);
 $primary-back-lighter-10: lighten($primary-back, 10%);
@@ -28,3 +30,4 @@ $background-5: #58646d;
 
 $nav-height: 100px;
 $nav-back: rgba(255, 255, 255, 0.95);
+$nav-transation-fnc: all 300ms ease-out 0ms;
