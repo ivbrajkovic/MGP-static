@@ -65,4 +65,16 @@
         ticking = true;
     });
     /*******************************************************************/
+
+    /**
+     * Select navbarlink based on url
+     *
+     * @param {*} navbar
+     */
+    function selectNavbarLink(navbar) {
+        const pathname = window.location.pathname;
+        if (pathname === '/') pathname += 'index.html';
+        navbar.querySelector(`a[href='${pathname}']`).classList.add('active');
+    }
+    selectNavbarLink(navbar);
 })();
